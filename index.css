@@ -1,0 +1,80 @@
+/*styling the keys of our calculator as a grid */
+.calculator__keys { 
+    display: grid; 
+
+        /* small spacing within our container */
+        padding: 20px;
+        /* create 4 columns */
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        /* create space between the components of our grid that are the keys */
+        grid-gap: 2px;
+      
+  }
+  /* the equal button is expanded on 4 rows that's why we used grid-row*/
+  .key--equal {
+    grid-row: span 4;
+    background: orangered;
+  }
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* add some spacing */
+  body          {
+    background: #F6F6F6;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    width: 75%;
+    margin: auto;
+
+  }
+  
+  /* limit the width and center */
+  .calculator   {
+    max-width: 400px;
+    margin: 0 auto;
+    border: 2px solid #111;
+    border-radius: 5px;
+    
+  }
+  .key--operator {
+background: gray;
+  }
+button  {
+    background: white; /* light background with opacity 50% */
+    border: 1px solid #111; /* black border */
+    padding: 20px;
+    color:black; /* white text */
+    border-radius: 5px; /* rounded corners */
+    font-size: 22px; /* larger fonts */
+    cursor: pointer; /* make it look clickable */
+  }
+  input   {
+    /* reset basic form styles */
+    background: none;
+    border: none;
+    box-shadow: none;
+    outline: none;
+  
+    padding: 10px;
+    width: 100%;
+    border-bottom: 2px solid #111;
+    color: #333;
+    text-align: right;
+    font-size: 40px;
+    border-radius: 0;
+  }
+  .calculator__display {
+      height: 50px;
+      color:blanchedalmond;
+      background-color: black;
+     width: 100%;
+     padding: 50px 0;;
+     display: inline-block;
+     
+  
+      vertical-align: middle;  
+    }
+

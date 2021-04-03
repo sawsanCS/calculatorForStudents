@@ -1,0 +1,42 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>calculator</title>
+    <!-- here we are linking our html to an external CSS file-->
+    <link rel="stylesheet" href="index.css">
+    <!-- here you are importing you javascript file, we used defer to execute the js after the page load -->
+    <script src="calculator.js" defer></script>
+ 
+</head>
+<body >
+ 
+    
+    <div class="calculator">
+        <!-- where the result will show-->
+    <div class="calculator__display">0</div>
+        <!--the keys of our calculator that we styled in a grid-->
+    <div class="calculator__keys" >
+        <button class="key--operator" data-action="add">+</button>
+        <button class="key--operator" data-action="subtract">-</button>
+        <button class="key--operator" data-action="multiply">&times;</button>
+        <button class="key--operator" data-action="divide">÷</button>
+        <button >7</button>
+        <button>8</button>
+        <button>9</button>
+        <!-- the equal button will be expanded on 4 rows like the figure : check the styling file-->
+        <button class="key--equal" data-action="calculate">=</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>0</button>
+        <button data-action="decimal">.</button>
+        <button data-action="clear">AC</button>
+       
+      </div>
+    </div>
+</body>
+  </html>
